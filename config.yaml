@@ -11,7 +11,7 @@
 carpentry: 'incubator'
 
 # Overall title for pages.
-title: 'Lesson Title'
+title: 'Hypothesis testing in biology'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
 created: ~
@@ -59,7 +59,18 @@ contact: 'team@carpentries.org'
 
 # Order of episodes in your lesson
 episodes: 
-- introduction.Rmd
+- 01-overview.Rmd
+- 02-first-test.Rmd
+- 03-two-sided-test.Rmd
+- 04-errors-in-hypothesis-testing.Rmd
+- 05-one-sample-t-test.Rmd
+- 06-CLT.Rmd
+- 07-t-practice.Rmd
+- 08-two-sample-t-test.Rmd
+- 09-interpreting-p-values.Rmd
+- 10-summary.Rmd
+- 11-references.Rmd
+
 
 # Information for Learners
 learners: 
