@@ -85,11 +85,11 @@
   Hypothesis testing in biology
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 9%" class="percentage">
-    9%
+<aside class="col-md-12 lesson-progress"><div style="width: 5%" class="percentage">
+    5%
   </div>
   <div class="progress incubator">
-    <div class="progress-bar incubator" role="progressbar" style="width: 9%" aria-valuenow="9" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar incubator" role="progressbar" style="width: 5%" aria-valuenow="5" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -301,7 +301,7 @@
         
         
         
-        <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 12 minutes </p>
+        <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 17 minutes </p>
         
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
@@ -316,7 +316,10 @@
 <div class="card-body">
 <div class="inner">
 <h3 class="card-title">Questions</h3>
-<ul><li>First question</li>
+<ul><li>What is the null distribution?</li>
+<li>How can we use the null distribution to make a decision in
+hypothesis testing?<br></li>
+<li>How can we run a hypothesis test in R?</li>
 </ul></div>
 </div>
 </div>
@@ -324,7 +327,11 @@
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<ul><li>First objective</li>
+<ul><li>Give an example for a simple hypothesis test, including setting up
+the null and alternative hypothesis and the corresponding null model,
+and decision making.<br></li>
+<li>Demonstrate how p-values can be calculated from either cumulative
+probabilities or the <code>.test</code> functions in R.</li>
 </ul></div>
 </div>
 </div>
@@ -352,8 +359,11 @@ and accept the alternative hypothesis that the prevalence in the test
 group differs from 4%. This test is so easy, because the null model is
 simply the well-known binomial distribution with a sample size of 100
 and a probability of 4%:</p>
-<p><span class="math display">\[ H_O: X \sim Bin(N=100, p=0.04)\]</span>
-### The null distribution</p>
+<p><span class="math display">\[ H_O: X \sim Bin(N=100,
+p=0.04)\]</span></p>
+</div>
+<div class="section level3">
+<h3 id="the-null-distribution">The null distribution<a class="anchor" aria-label="anchor" href="#the-null-distribution"></a></h3>
 <p>We can look at this distribution:</p>
 <figure><img src="../fig/02-null-distribution.png" alt="binomial probability distribution of number of patients with disease" width="500" class="figure mx-auto d-block"><figcaption>The null distribution</figcaption></figure><p>It gives us the probabilities of seeing <span class="math inline">\(X\)</span> cases out of 100 with the disease,
 given that each individual has a probability of 4% of having this

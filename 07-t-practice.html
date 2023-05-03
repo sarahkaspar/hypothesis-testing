@@ -85,11 +85,11 @@
   Hypothesis testing in biology
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 55%" class="percentage">
-    55%
+<aside class="col-md-12 lesson-progress"><div style="width: 66%" class="percentage">
+    66%
   </div>
   <div class="progress incubator">
-    <div class="progress-bar incubator" role="progressbar" style="width: 55%" aria-valuenow="55" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar incubator" role="progressbar" style="width: 66%" aria-valuenow="66" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -335,10 +335,36 @@ points”… do we have enough data points?</p>
 URL, and apply some transformations on it. If you run this, you will
 have a vector called <code>population</code> with 841 mice
 measurements.</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">mice_pheno</span> <span class="op">&lt;-</span> <span class="fu">read_csv</span><span class="op">(</span>file<span class="op">=</span> <span class="fu">url</span><span class="op">(</span><span class="st">"https://raw.githubusercontent.com/genomicsclass/dagdata/master/inst/extdata/mice_pheno.csv"</span><span class="op">)</span><span class="op">)</span></span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>Rows: 846 Columns: 3
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr (2): Sex, Diet
+dbl (1): Bodyweight
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">mice_pheno</span> <span class="op">&lt;-</span> <span class="fu">filter</span><span class="op">(</span><span class="va">mice_pheno</span>, <span class="op">!</span><span class="fu">is.na</span><span class="op">(</span><span class="va">Bodyweight</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="co">#weights &lt;- filter(mice_pheno, Sex=="F", Diet =="chow")$Bodyweight</span></span>
+<span><span class="va">population</span> <span class="op">&lt;-</span> <span class="va">mice_pheno</span><span class="op">$</span><span class="va">Bodyweight</span></span></code></pre>
+</div>
 <p>We will assume that those 841 measurements constitute the population
 of mice.<br>
 We can calculate the the population average and use it as <span class="math inline">\(\mu_0\)</span>.</p>
-<div class="codewrapper sourceCode" id="cb1">
+<div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -349,7 +375,7 @@ statistic <span class="math inline">\(t\)</span> each time. This way, we
 have a scenario where the null hypothesis is true (the population
 average doesn’t differ from <span class="math inline">\(\mu_0\)</span>)
 and we can check how <span class="math inline">\(t\)</span> behaves.</p>
-<div class="codewrapper sourceCode" id="cb2">
+<div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -383,10 +409,10 @@ obtain the vector <code>null_t</code>.</p>
 standard normal distribution?</li>
 </ol><p>Hint: For plotting, it helps to turn your vector into a data
 frame:</p>
-<div class="codewrapper sourceCode" id="cb3">
+<div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data.frame</span>(<span class="at">t =</span> null_t) <span class="sc">%&gt;%</span> </span></code></pre>
+<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data.frame</span>(<span class="at">t =</span> null_t) <span class="sc">%&gt;%</span> </span></code></pre>
 </div>
 <ol start="2" style="list-style-type: decimal"><li>Try a QQ-plot instead.</li>
 </ol></div>
@@ -402,7 +428,7 @@ frame:</p>
 <div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>The histogram is not very suspicious.</li>
-</ol><div class="codewrapper sourceCode" id="cb4">
+</ol><div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -416,7 +442,7 @@ frame:</p>
 <pre class="output" tabindex="0"><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
 </div>
 <figure><img src="fig/07-t-practice-rendered-histogram-t-null-solution-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><ol start="2" style="list-style-type: decimal"><li>The qq-plot</li>
-</ol><div class="codewrapper sourceCode" id="cb6">
+</ol><div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -435,7 +461,7 @@ distribution. This becomes more obvious in the QQ-plot, where the points
 don’t match the line at the sides.</p>
 <p>Feel free to play with the sample size <code>N</code> in the below
 code chunk, to see how the distribution of <span class="math inline">\(t\)</span> changes with the sample size:</p>
-<div class="codewrapper sourceCode" id="cb7">
+<div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -492,7 +518,7 @@ worrying about the sample size.</p>
 <p>For our example, you already calculated <span class="math inline">\(t=2.57\)</span> from the data for the mice on
 diet, and the probability of <span class="math inline">\(t\)</span>
 under the standard normal distribution. As a reminder:</p>
-<div class="codewrapper sourceCode" id="cb8">
+<div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -506,7 +532,7 @@ under the standard normal distribution. As a reminder:</p>
 </div>
 <ol style="list-style-type: decimal"><li>Get a p-value by calculating the probability of <span class="math inline">\(t\)</span> under the t-distribution. You will need
 to specify the degrees of freedom, which is <span class="math inline">\(N-1\)</span> for a one-sample t-test.</li>
-</ol><div class="codewrapper sourceCode" id="cb10">
+</ol><div class="codewrapper sourceCode" id="cb13">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -514,7 +540,7 @@ to specify the degrees of freedom, which is <span class="math inline">\(N-1\)</s
 <span><span class="va">N</span> <span class="op">&lt;-</span> <span class="fl">20</span> <span class="co"># the sample had 20 data points</span></span></code></pre>
 </div>
 <ol start="2" style="list-style-type: decimal"><li>Try the function <code>t.test</code> to calculate the p-value:</li>
-</ol><div class="codewrapper sourceCode" id="cb11">
+</ol><div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -534,7 +560,7 @@ to specify the degrees of freedom, which is <span class="math inline">\(N-1\)</s
 <div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Calculating the p-value using the t-distribution:</li>
-</ol><div class="codewrapper sourceCode" id="cb12">
+</ol><div class="codewrapper sourceCode" id="cb15">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -544,7 +570,7 @@ to specify the degrees of freedom, which is <span class="math inline">\(N-1\)</s
 </div>
 <ol start="2" style="list-style-type: decimal"><li>Using <code>t.test</code>
 </li>
-</ol><div class="codewrapper sourceCode" id="cb13">
+</ol><div class="codewrapper sourceCode" id="cb16">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
