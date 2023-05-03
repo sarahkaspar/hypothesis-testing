@@ -23,7 +23,7 @@ library(tidyverse)
 Have a look at this plot:
 
 ```{r irrelevant-diff, warning=FALSE, echo=FALSE}
-library(ggpubr)
+#library(ggpubr)
 set.seed(44)
 treatment1 <- rnorm(300, mean=10.1, sd=1)
 treatment2 <- rnorm(300, mean=10.3,sd=1)
@@ -37,7 +37,7 @@ ggplot(df,
   geom_jitter(width=0.2,alpha=0.3)+
   ylim(c(7,14))+
   #annotate(geom="text", x=2.3,y=13, label=paste("p =",round(pval,digits=2)))+
-  stat_compare_means(method="t.test")+
+ # stat_compare_means(method="t.test")+
   theme_classic()
 ```
 
