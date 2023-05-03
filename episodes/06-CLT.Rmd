@@ -1,18 +1,21 @@
 ---
 title: "The distribution of t according to the Central Limit Theorem"
-teaching: 10
-exercises: 2
+teaching: 7
+exercises: 0
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- 1
+- What is the central limit theorem?
+- What does it predict for the distribution of $t$?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- 2
+- Introduce the Central limit theorem.
+- Explain that it gives a theoretical distribution for $t$.
+
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 

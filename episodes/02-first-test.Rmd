@@ -1,18 +1,21 @@
 ---
 title: "Our first test: Disease prevalence"
 teaching: 10
-exercises: 2
+exercises: 7
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- First question
+- What is the null distribution? 
+- How can we use the null distribution to make a decision in hypothesis testing?  
+- How can we run a hypothesis test in R?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- First objective
+- Give an example for a simple hypothesis test, including setting up the null and alternative hypothesis and the corresponding null model, and decision making.  
+- Demonstrate how p-values can be calculated from either cumulative probabilities or the `.test` functions in R.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
  
@@ -31,6 +34,7 @@ If we have enough evidence against the null, we reject it, and accept the altern
 This test is so easy, because the null model is simply the well-known binomial distribution with a sample size of 100 and a probability of 4%:
 
 $$ H_O: X \sim Bin(N=100, p=0.04)$$
+
 ### The null distribution
 
 We can look at this distribution:

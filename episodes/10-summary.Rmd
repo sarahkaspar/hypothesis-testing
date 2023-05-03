@@ -1,19 +1,9 @@
 ---
 title: "Summary and practical aspects"
-teaching: 10
-exercises: 2
+teaching: 3
+exercises: 0
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
-
-- 1
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::: objectives
-
-- 2
-::::::::::::::::::::::::::::::::::::::::::::::::
 
 I hope this tutorial allowed you to notice a pattern in the tests you have seen.  
 

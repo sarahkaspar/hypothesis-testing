@@ -1,18 +1,21 @@
 ---
 title: "One-sample t-test"
-teaching: 10
-exercises: 2
+teaching: 15
+exercises: 7
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- 1
+- What is a one-sample t-test?
+- Why is $t$ a useful test statistic?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- 2
+- Give an example for the one-sample t-test.
+- Explain null and alternative hypothesis, and why we use test statistics.
+- Explain that $t$ weighs sample size and effect size against variance.
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 

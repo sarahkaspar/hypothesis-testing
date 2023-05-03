@@ -1,18 +1,20 @@
 ---
 title: "Interpreting p-values"
-teaching: 10
-exercises: 2
+teaching: 6
+exercises: 0
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- 1
+- What are common mistakes when interpreting p-values?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- 2
+- Emphasize the importance of effect size to go along with p-values
+- Point out common mistakes when interpreting p-values and how to avoid them
+
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
@@ -28,15 +30,15 @@ set.seed(44)
 treatment1 <- rnorm(300, mean=10.1, sd=1)
 treatment2 <- rnorm(300, mean=10.3,sd=1)
 
-#pval <- t.test(treatment1,treatment2)$p.value
+pval <- t.test(treatment1,treatment2)$p.value
 df <- data.frame(treatment=c(rep("A",300),rep("B",300)),
                  response=c(treatment1,treatment2))
 ggplot(df,
        aes(x=treatment, y=response))+
-  geom_boxplot()+
-  geom_jitter(width=0.2,alpha=0.3)+
+  geom_boxplot(outlier.shape = NA)+
+  geom_jitter(width=0.2,alpha=0.9)+
   ylim(c(7,14))+
-  #annotate(geom="text", x=2.3,y=13, label=paste("p =",round(pval,digits=2)))+
+  annotate(geom="text", x=2.3,y=13, label=paste("t-test: p =",round(pval,digits=2)))+
  # stat_compare_means(method="t.test")+
   theme_classic()
 ```

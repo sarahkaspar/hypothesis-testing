@@ -27,11 +27,10 @@ The big question is: Is the central limit theorem valid for this example? After 
 
 The following code snipped will read a file with mice weights from a URL, and apply some transformations on it. If you run this, you will have a vector called `population` with 841 mice measurements.
 
-```{r, include = FALSE, eval =TRUE}
-mice_pheno <- read.csv2(file= url("https://raw.githubusercontent.com/genomicsclass/dagdata/master/inst/extdata/mice_pheno.csv"), sep=",")
-mice_pheno$Bodyweight <- as.numeric(mice_pheno$Bodyweight)
+```{r,}
+mice_pheno <- read_csv(file= url("https://raw.githubusercontent.com/genomicsclass/dagdata/master/inst/extdata/mice_pheno.csv"))
 mice_pheno <- filter(mice_pheno, !is.na(Bodyweight))
-weights <- filter(mice_pheno, Sex=="F", Diet =="chow")$Bodyweight
+#weights <- filter(mice_pheno, Sex=="F", Diet =="chow")$Bodyweight
 population <- mice_pheno$Bodyweight
 ```
 
@@ -168,7 +167,7 @@ N <- 20 # the sample had 20 data points
 
 2. Try the function `t.test` to calculate the p-value:
 
-```{r t-test, exercise=TRUE}
+```{r t-test}
 weights <- c(31.41, 28.29, 22.82, 26.07, 31.97, 22.60, 31.47, 29.18, 22.98, 23.26, 23.48, 20.88, 28.44, 30.34, 23.14, 22.80, 24.47, 39.73, 25.71, 22.74)
 mu0 <- 23.89338
 ```
