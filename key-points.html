@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<title>Lesson Title: Key Points</title>
+<title>Hypothesis testing in biology: Key Points</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="assets/styles.css">
 <script src="assets/scripts.js" type="text/javascript"></script><!-- mathjax --><script type="text/x-mathjax-config">
@@ -65,7 +65,7 @@
       <img class="small-logo" alt="Carpentries Incubator" src="assets/images/incubator-logo-sm.svg">
 </div>
     <div class="lesson-title-md">
-      Lesson Title
+      Hypothesis testing in biology
     </div>
     <div class="search-icon-sm">
       <!-- TODO: do not show until we have search
@@ -76,7 +76,7 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 <li class="nav-item">
           <span class="lesson-title">
-            Lesson Title
+            Hypothesis testing in biology
           </span>
         </li>
         <li class="nav-item">
@@ -106,7 +106,7 @@
   </div>
 <!--/div.container-fluid -->
 </nav><div class="col-md-12 mobile-title">
-  Lesson Title
+  Hypothesis testing in biology
 </div>
 
 <aside class="col-md-12 lesson-progress"><div style="width: %" class="percentage">
@@ -177,7 +177,127 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="introduction.html">1. Using RMarkdown</a>
+        <a href="01-overview.html">1. Overview and motivation</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush3">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading3">
+        <a href="02-first-test.html">2. Our first test: Disease prevalence</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush4">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading4">
+        <a href="03-two-sided-test.html">3. One-sided vs. two-sided tests, and data snooping</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush5">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading5">
+        <a href="04-errors-in-hypothesis-testing.html">4. Errors in hypothesis testing</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush6">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading6">
+        <a href="05-one-sample-t-test.html">5. One-sample t-test</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush7">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading7">
+        <a href="06-CLT.html">6. The distribution of t according to the Central Limit Theorem</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush8">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading8">
+        <a href="07-t-practice.html">7. The distribution of t in practice</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush9">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading9">
+        <a href="08-two-sample-t-test.html">8. The two-sample and paired t-test</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush10">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading10">
+        <a href="09-interpreting-p-values.html">9. Interpreting p-values</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush11">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading11">
+        <a href="10-summary.html">10. Summary and practical aspects</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush12">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading12">
+        <a href="11-references.html">11. References</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -239,18 +359,18 @@
     <main id="main-content" class="main-content"><div class="container lesson-content">
         
         
-<section id="introduction"><h2 class="section-heading"><a href="introduction.html">Using RMarkdown</a></h2>
-<hr class="half-width">
-<ul>
-<li>Use <code>.md</code> files for episodes when you want static
-content</li>
-<li>Use <code>.Rmd</code> files for episodes when you need to generate
-output</li>
-<li>Run <code>sandpaper::check_lesson()</code> to identify any issues
-with your lesson</li>
-<li>Run <code>sandpaper::build_lesson()</code> to preview your lesson
-locally</li>
-</ul></section>
+<section id="01-overview"><h2 class="section-heading"><a href="01-overview.html">Overview and motivation</a></h2>
+<hr class="half-width"></section><section id="02-first-test"><h2 class="section-heading"><a href="02-first-test.html">Our first test: Disease prevalence</a></h2>
+<hr class="half-width"></section><section id="03-two-sided-test"><h2 class="section-heading"><a href="03-two-sided-test.html">One-sided vs. two-sided tests, and data snooping</a></h2>
+<hr class="half-width"></section><section id="04-errors-in-hypothesis-testing"><h2 class="section-heading"><a href="04-errors-in-hypothesis-testing.html">Errors in hypothesis testing</a></h2>
+<hr class="half-width"></section><section id="05-one-sample-t-test"><h2 class="section-heading"><a href="05-one-sample-t-test.html">One-sample t-test</a></h2>
+<hr class="half-width"></section><section id="06-CLT"><h2 class="section-heading"><a href="06-CLT.html">The distribution of t according to the Central Limit Theorem</a></h2>
+<hr class="half-width"></section><section id="07-t-practice"><h2 class="section-heading"><a href="07-t-practice.html">The distribution of t in practice</a></h2>
+<hr class="half-width"></section><section id="08-two-sample-t-test"><h2 class="section-heading"><a href="08-two-sample-t-test.html">The two-sample and paired t-test</a></h2>
+<hr class="half-width"></section><section id="09-interpreting-p-values"><h2 class="section-heading"><a href="09-interpreting-p-values.html">Interpreting p-values</a></h2>
+<hr class="half-width"></section><section id="10-summary"><h2 class="section-heading"><a href="10-summary.html">Summary and practical aspects</a></h2>
+<hr class="half-width"></section><section id="11-references"><h2 class="section-heading"><a href="11-references.html">References</a></h2>
+<hr class="half-width"></section>
 </div>
     </main>
 </div>
@@ -298,9 +418,9 @@ locally</li>
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-rmd/key-points.html",
   "identifier": "https://carpentries.github.io/workbench-template-rmd/key-points.html",
-  "dateCreated": "2023-02-21",
-  "dateModified": "2023-05-02",
-  "datePublished": "2023-05-02"
+  "dateCreated": "2023-05-03",
+  "dateModified": "2023-05-03",
+  "datePublished": "2023-05-03"
 }
 
   </script><script>

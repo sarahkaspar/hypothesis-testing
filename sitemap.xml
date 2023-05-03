@@ -4,6 +4,39 @@
     <loc>https://carpentries.github.io/workbench-template-rmd/01-introduction.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/01-overview.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/02-first-test.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/03-two-sided-test.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/04-errors-in-hypothesis-testing.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/05-one-sample-t-test.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/06-CLT.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/07-t-practice.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/08-two-sample-t-test.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/09-interpreting-p-values.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/10-summary.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/11-references.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-rmd/404.html</loc>
   </url>
   <url>
@@ -23,6 +56,39 @@
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-rmd/instructor/01-introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/01-overview.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/02-first-test.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/03-two-sided-test.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/04-errors-in-hypothesis-testing.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/05-one-sample-t-test.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/06-CLT.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/07-t-practice.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/08-two-sample-t-test.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/09-interpreting-p-values.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/10-summary.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/11-references.html</loc>
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-rmd/instructor/404.html</loc>
