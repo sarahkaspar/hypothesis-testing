@@ -1,18 +1,20 @@
 ---
 title: "Interpreting p-values"
-teaching: 10
-exercises: 2
+teaching: 6
+exercises: 0
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- 1
+- What are common mistakes when interpreting p-values?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- 2
+- Emphasize the importance of effect size to go along with p-values
+- Point out common mistakes when interpreting p-values and how to avoid them
+
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 

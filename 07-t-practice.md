@@ -26,6 +26,26 @@ The big question is: Is the central limit theorem valid for this example? After 
 The following code snipped will read a file with mice weights from a URL, and apply some transformations on it. If you run this, you will have a vector called `population` with 841 mice measurements.
 
 
+```r
+mice_pheno <- read_csv(file= url("https://raw.githubusercontent.com/genomicsclass/dagdata/master/inst/extdata/mice_pheno.csv"))
+```
+
+```{.output}
+Rows: 846 Columns: 3
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr (2): Sex, Diet
+dbl (1): Bodyweight
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+```
+
+```r
+mice_pheno <- filter(mice_pheno, !is.na(Bodyweight))
+#weights <- filter(mice_pheno, Sex=="F", Diet =="chow")$Bodyweight
+population <- mice_pheno$Bodyweight
+```
 
 
 We will assume that those 841 measurements constitute the population of mice.  

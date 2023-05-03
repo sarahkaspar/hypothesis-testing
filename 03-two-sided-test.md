@@ -1,18 +1,21 @@
 ---
 title: "One-sided vs. two-sided tests, and data snooping"
-teaching: 10
-exercises: 2
+teaching: 5
+exercises: 5
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- First question
+- Why is it important to define the hypothesis *before* running the test? 
+- What is the difference between one-sided and two-sided tests?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- First objective
+- Explain the difference between one-sided and two-sided tests
+- Raise awareness of data snooping / HARKing 
+- Introduce further arguments in the `binom.test` function
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
  
