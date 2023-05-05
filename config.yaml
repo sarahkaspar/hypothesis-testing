@@ -17,7 +17,7 @@ title: 'Hypothesis testing in biology'
 created: ~
 
 # Comma-separated list of keywords for the lesson
-keywords: 'software, data, lesson, The Carpentries'
+keywords: 'statistics, R, hypothesis testing, scientific coding'
 
 # Life cycle stage of the lesson
 # possible values: pre-alpha, alpha, beta, stable
@@ -33,7 +33,7 @@ source: 'https://github.com/carpentries/workbench-template-rmd'
 branch: 'main'
 
 # Who to contact if there are any issues
-contact: 'team@carpentries.org'
+contact: 'sarah.kaspar@embl.de'
 
 # Navigation ------------------------------------------------
 #
