@@ -1,49 +1,23 @@
 ---
-title: Setup
+title: Lesson overview
 ---
 
-Setup instructions live in this document. Please specify the tools and the data
-sets the Learner needs to have installed.
 
-## Data Sets
+## Learning goals for this lecture
 
-Download the [data zip file](data/data.zip) and unzip it to your Desktop
-
-## Software Setup
-
-::::::::::::::::::::::::::::::::::::::: discussion
-
-### Details
-
-Setup for different systems can be presented in dropdown menus via a `solution`
-tag. They will join to this discussion block, so you can give a general overview
-of the software used in this lesson here and fill out the individual operating
-systems (and potentially add more, e.g. online setup) in the solutions blocks.
-
-:::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::: solution
-
-### Windows
-
-Use PuTTY
-
-:::::::::::::::::::::::::
-
-:::::::::::::::: solution
-
-### MacOS
-
-Use Terminal.app
-
-:::::::::::::::::::::::::
+- Understand the common principles behind statistical tests
+- learn to spot common pitfalls
+- Understand t-test, chi-square test, and Wilcoxon test
+- Identify and deal with multiple testing scenarios
+- Perform hypothesis testing and p-value adjustment in R
 
 
-:::::::::::::::: solution
 
-### Linux
+## Prerequisites
 
-Use Terminal
+- Data handling and visualization using the `tidyverse` in R (or completing [this tutorial](https://www.ebi.ac.uk/training/online/courses/biostatistics-introduction/data-handling-and-visualisation/))
+- Basics on statistical distributions (covered in [this lecture](https://sarahkaspar.github.io/biostatistics-course/))
 
-:::::::::::::::::::::::::
+## Author
 
+Dr. Sarah Kaspar (sarah.kaspar@embl.de) 
