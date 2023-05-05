@@ -423,72 +423,23 @@ any links that you are not going to use.
  --></tbody></table><p>
       The actual schedule may vary slightly depending on the topics and exercises chosen by the instructor.
       </p>
-      </section><section id="setup"><p>Setup instructions live in this document. Please specify the tools
-and the data sets the Learner needs to have installed.</p>
-<section id="data-sets"><h2 class="section-heading">Data Sets<a class="anchor" aria-label="anchor" href="#data-sets"></a>
+      </section><section id="setup"><section id="learning-goals-for-this-lecture"><h2 class="section-heading">Learning goals for this lecture<a class="anchor" aria-label="anchor" href="#learning-goals-for-this-lecture"></a>
 </h2>
-<hr class="half-width"><p>Download the <a href="../data/data.zip">data zip file</a> and unzip it
-to your Desktop</p>
-</section><section id="software-setup"><h2 class="section-heading">Software Setup<a class="anchor" aria-label="anchor" href="#software-setup"></a>
+<hr class="half-width"><ul><li>Understand the common principles behind statistical tests</li>
+<li>learn to spot common pitfalls</li>
+<li>Understand t-test, chi-square test, and Wilcoxon test</li>
+<li>Identify and deal with multiple testing scenarios</li>
+<li>Perform hypothesis testing and p-value adjustment in R</li>
+</ul></section><section id="prerequisites"><h2 class="section-heading">Prerequisites<a class="anchor" aria-label="anchor" href="#prerequisites"></a>
 </h2>
-<hr class="half-width"><div id="discussion1" class="callout discussion">
-<div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
-</div>
-<div id="details" class="callout-inner">
-<h3 class="callout-title">Details<a class="anchor" aria-label="anchor" href="#discussion1"></a>
-</h3>
-<div class="callout-content">
-<p>Setup for different systems can be presented in dropdown menus via a
-<code>solution</code> tag. They will join to this discussion block, so
-you can give a general overview of the software used in this lesson here
-and fill out the individual operating systems (and potentially add more,
-e.g. online setup) in the solutions blocks.</p>
-</div>
-</div>
-</div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1">
-  Windows
-  </h4>
-</button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
-<div class="accordion-body">
-<p>Use PuTTY</p>
-</div>
-</div>
-</div>
-</div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2">
-  MacOS
-  </h4>
-</button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
-<div class="accordion-body">
-<p>Use Terminal.app</p>
-</div>
-</div>
-</div>
-</div>
-<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
-  <h4 class="accordion-header" id="headingSolution3">
-  Linux
-  </h4>
-</button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
-<div class="accordion-body">
-<p>Use Terminal</p>
-</div>
-</div>
-</div>
-</div>
+<hr class="half-width"><ul><li>Data handling and visualization using the <code>tidyverse</code> in
+R (or completing <a href="https://www.ebi.ac.uk/training/online/courses/biostatistics-introduction/data-handling-and-visualisation/" class="external-link">this
+tutorial</a>)</li>
+<li>Basics on statistical distributions (covered in <a href="https://sarahkaspar.github.io/biostatistics-course/" class="external-link">this
+lecture</a>)</li>
+</ul></section><section id="author"><h2 class="section-heading">Author<a class="anchor" aria-label="anchor" href="#author"></a>
+</h2>
+<hr class="half-width"><p>Dr. Sarah Kaspar (<a href="../mailto:sarah.kaspar@embl.de" class="email">sarah.kaspar@embl.de</a>)</p>
 <!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
@@ -513,7 +464,7 @@ any links that you are not going to use.
 	
         | <a href="https://github.com/carpentries/workbench-template-rmd/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a> 
         | <a href="https://github.com/carpentries/workbench-template-rmd/" class="external-link">Source</a></p>
-				<p><a href="https://github.com/carpentries/workbench-template-rmd/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+				<p><a href="https://github.com/carpentries/workbench-template-rmd/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:sarah.kaspar@embl.de">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 			</div>
 			<div class="col-md-6">
         
@@ -537,14 +488,14 @@ any links that you are not going to use.
   "@id": "https://carpentries.github.io/workbench-template-rmd/instructor/index.html",
   "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
   "description": "A Carpentries Lesson teaching foundational data and coding skills to researchers worldwide",
-  "keywords": "software, data, lesson, The Carpentries",
+  "keywords": "statistics, R, hypothesis testing, scientific coding",
   "name": "Hypothesis testing in biology",
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-rmd/instructor/index.html",
   "identifier": "https://carpentries.github.io/workbench-template-rmd/instructor/index.html",
-  "dateCreated": "2023-05-03",
-  "dateModified": "2023-05-03",
-  "datePublished": "2023-05-03"
+  "dateCreated": "2023-05-05",
+  "dateModified": "2023-05-05",
+  "datePublished": "2023-05-05"
 }
 
   </script><script>
