@@ -6,13 +6,17 @@ exercises: 2
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- 1
+- How is the one-sample t-test extended to two samples?  
+- What is pairing? 
+- What is pairing good for?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- 2
+- Introduce two-sample and paired t-test. 
+- Introduce the concept of statistical power.
+
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
