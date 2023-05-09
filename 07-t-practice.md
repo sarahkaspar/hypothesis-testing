@@ -6,13 +6,14 @@ exercises: 2
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- 1
+- Is the t-statistic normally distributed? 
+- What is the t-distribution?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- 2
+- Introduce the t-distribution and why it's useful for small samples.
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
@@ -28,22 +29,7 @@ The following code snipped will read a file with mice weights from a URL, and ap
 
 ```r
 mice_pheno <- read_csv(file= url("https://raw.githubusercontent.com/genomicsclass/dagdata/master/inst/extdata/mice_pheno.csv"))
-```
-
-```{.output}
-Rows: 846 Columns: 3
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: ","
-chr (2): Sex, Diet
-dbl (1): Bodyweight
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
-```
-
-```r
 mice_pheno <- filter(mice_pheno, !is.na(Bodyweight))
-#weights <- filter(mice_pheno, Sex=="F", Diet =="chow")$Bodyweight
 population <- mice_pheno$Bodyweight
 ```
 
