@@ -35,6 +35,8 @@ In practice, you usually don't have to perform steps 2-6 on your own -- standard
 Error in knitr::include_graphics("images/in_practice.png"): Cannot find the file(s): "images/in_practice.png"
 ```
 
+![In practice (image adapted from kindpng.com)](fig/in_practice.png){width="150px" alt="Computer screen executing wilcoxon test"}
+
 1. Look at your data!   
 
 2. Decide on a distribution that your data follow.  
