@@ -30,11 +30,6 @@ The "cook book" for a test goes as follows:
 In practice, you usually don't have to perform steps 2-6 on your own -- standard procedures, i.e. statistical tests, exist for most kind of data, and the computer does the calculation for you. So... what is left for you to do?  
 
 
-
-```{.error}
-Error in knitr::include_graphics("images/in_practice.png"): Cannot find the file(s): "images/in_practice.png"
-```
-
 ![In practice (image adapted from kindpng.com)](fig/in_practice.png){width="150px" alt="Computer screen executing wilcoxon test"}
 
 1. Look at your data!   
