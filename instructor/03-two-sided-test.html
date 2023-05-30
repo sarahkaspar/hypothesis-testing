@@ -165,7 +165,7 @@
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
-        One-sided vs. two-sided tests, and data snooping
+        3. One-sided vs. two-sided tests, and data snooping
         </span>
       </button>
     </div><!--/div.accordion-header-->
@@ -360,11 +360,12 @@ below 4%.</p>
 the alternative hypothesis: We wanted to test whether the prevalence is
 different from 4%. Well, different can be smaller or larger. So, to be
 fair, this is what we should actually do:</p>
-<figure><img src="../fig/03-two-sided-significance.png" alt="Binomial null distribution with two-sided significance indicated." width="500" class="figure mx-auto d-block"> We should look on both sides of the distribution and ask
+<p><img src="../fig/03-two-sided-significance.png" alt="Binomial null distribution with two-sided significance indicated." width="500" class="figure"> We should look on both sides of the distribution and ask
 what outcomes are unlikely. For this, we split the 5% significance to
 2.5% on each side. That way, we will reject everything below 1, or above
 8. The alternative hypothesis is now that the prevalence is different
-from 4%.</figure><p>But what exactly was wrong with a one-sided test? An observation of 9
+from 4%.</p>
+<p>But what exactly was wrong with a one-sided test? An observation of 9
 is clearly higher than the expected 4, so no need to test on the other
 side, right? Unfortunately: no.</p>
 <div class="section level3">
@@ -380,12 +381,12 @@ the test group gives you an outcome that is higher or lower than the
 expected value. So we’d have to double the alpha, and in reality it
 would be around 10%. This means, assuming the null was true, we actually
 had an about 10% chance of falsely rejecting it.</p>
-<div id="callout1" class="callout callout">
+<div id="side-note" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="side-note" class="callout-inner">
-<h3 class="callout-title">Side note<a class="anchor" aria-label="anchor" href="#callout1"></a>
+<h3 class="callout-title">Side note<a class="anchor" aria-label="anchor" href="#side-note"></a>
 </h3>
 <div class="callout-content">
 <p>Above it says that there is a ~50% chance of the observation being
@@ -478,12 +479,12 @@ lower if you choose a one-sided test:</p>
 </h3>
 <pre class="output" tabindex="0"><code>[1] 0.05583272</code></pre>
 </div>
-<div id="challenge1" class="callout challenge">
+<div id="challenge-one-sided-test" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-one-sided-test" class="callout-inner">
-<h3 class="callout-title">Challenge: one-sided test<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Challenge: one-sided test<a class="anchor" aria-label="anchor" href="#challenge-one-sided-test"></a>
 </h3>
 <div class="callout-content">
 <p>In which of these cases would a one-sided test be OK?</p>
@@ -561,9 +562,9 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.11.16" class="external-link">sandpaper (0.11.16)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.2" class="external-link">sandpaper (0.12.2)</a>,
         <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.5.3)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.2.16" class="external-link">varnish (0.2.16)</a>.</p>
+      and <a href="https://github.com/carpentries/varnish/tree/0.2.17" class="external-link">varnish (0.2.17)</a>.</p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -585,7 +586,7 @@ any links that you are not going to use.
   "identifier": "https://carpentries.github.io/workbench-template-rmd/instructor/03-two-sided-test.html",
   "dateCreated": "2023-05-11",
   "dateModified": "2023-05-03",
-  "datePublished": "2023-05-16"
+  "datePublished": "2023-05-30"
 }
 
   </script><script>

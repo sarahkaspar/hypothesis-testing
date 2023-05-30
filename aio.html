@@ -642,12 +642,12 @@ out of 100 with a disease, given a prevalence of 4%:</p>
 </h3>
 <pre class="output" tabindex="0"><code>[1] 0.1595108</code></pre>
 </div>
-<div id="challenge1" class="callout challenge">
+<div id="challenge-binomial-test" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-binomial-test" class="callout-inner">
-<h3 class="callout-title">Challenge: Binomial test<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Challenge: Binomial test<a class="anchor" aria-label="anchor" href="#challenge-binomial-test"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
@@ -678,7 +678,7 @@ perform the test. Do you get the same result as with
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Calculate the probability as follows:</li>
@@ -803,11 +803,12 @@ below 4%.</p>
 the alternative hypothesis: We wanted to test whether the prevalence is
 different from 4%. Well, different can be smaller or larger. So, to be
 fair, this is what we should actually do:</p>
-<figure><img src="fig/03-two-sided-significance.png" alt="Binomial null distribution with two-sided significance indicated." width="500" class="figure mx-auto d-block"> We should look on both sides of the distribution and ask
+<p><img src="fig/03-two-sided-significance.png" alt="Binomial null distribution with two-sided significance indicated." width="500" class="figure"> We should look on both sides of the distribution and ask
 what outcomes are unlikely. For this, we split the 5% significance to
 2.5% on each side. That way, we will reject everything below 1, or above
 8. The alternative hypothesis is now that the prevalence is different
-from 4%.</figure><p>But what exactly was wrong with a one-sided test? An observation of 9
+from 4%.</p>
+<p>But what exactly was wrong with a one-sided test? An observation of 9
 is clearly higher than the expected 4, so no need to test on the other
 side, right? Unfortunately: no.</p>
 <div class="section level3">
@@ -824,12 +825,12 @@ the test group gives you an outcome that is higher or lower than the
 expected value. So we’d have to double the alpha, and in reality it
 would be around 10%. This means, assuming the null was true, we actually
 had an about 10% chance of falsely rejecting it.</p>
-<div id="callout1" class="callout callout">
+<div id="side-note" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="side-note" class="callout-inner">
-<h3 class="callout-title">Side note<a class="anchor" aria-label="anchor" href="#callout1"></a>
+<h3 class="callout-title">Side note<a class="anchor" aria-label="anchor" href="#side-note"></a>
 </h3>
 <div class="callout-content">
 <p>Above it says that there is a ~50% chance of the observation being
@@ -926,12 +927,12 @@ lower if you choose a one-sided test:</p>
 </h3>
 <pre class="output" tabindex="0"><code>[1] 0.05583272</code></pre>
 </div>
-<div id="challenge1" class="callout challenge">
+<div id="challenge-one-sided-test" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-one-sided-test" class="callout-inner">
-<h3 class="callout-title">Challenge: one-sided test<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Challenge: one-sided test<a class="anchor" aria-label="anchor" href="#challenge-one-sided-test"></a>
 </h3>
 <div class="callout-content">
 <p>In which of these cases would a one-sided test be OK?</p>
@@ -1196,12 +1197,12 @@ data mean is different from <span class="math inline">\(mu_0\)</span>,
 and that the mice on the special diet have a different weight from the
 known average. In the next section, you will learn what the
 t-distribution is and why it is a good distribution for <span class="math inline">\(t\)</span>.</p>
-<div id="challenge1" class="callout challenge">
+<div id="calculate-t" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="calculate-t" class="callout-inner">
-<h3 class="callout-title">Calculate t<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Calculate t<a class="anchor" aria-label="anchor" href="#calculate-t"></a>
 </h3>
 <div class="callout-content">
 <p>Do the first step of your own t-test! Below, the values I used for
@@ -1229,7 +1230,7 @@ How does this affect <span class="math inline">\(t\)</span>?</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Calculate t:</li>
@@ -1329,12 +1330,12 @@ different <span class="math inline">\(t\)</span> each time, and plotting
 the a histogram or density of <span class="math inline">\(t\)</span>s
 will give a Gaussian bell shape.<br>
 This is enough knowledge to calculate a p-value. You can do this :)</p>
-<div id="challenge1" class="callout challenge">
+<div id="the-distribution-of-t" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="the-distribution-of-t" class="callout-inner">
-<h3 class="callout-title">The distribution of t<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">The distribution of t<a class="anchor" aria-label="anchor" href="#the-distribution-of-t"></a>
 </h3>
 <div class="callout-content">
 <p>We start with the mouse weights and the resulting <span class="math inline">\(t\)</span> from the last section.</p>
@@ -1356,7 +1357,7 @@ calculation to make this a two-sided test?</p></li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>
 </li></ol>
@@ -1489,12 +1490,12 @@ and we can check how <span class="math inline">\(t\)</span> behaves.</p>
 <span>  <span class="va">null_t</span><span class="op">[</span><span class="va">i</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="op">(</span><span class="fu">mean</span><span class="op">(</span><span class="va">null_sample</span><span class="op">)</span><span class="op">-</span><span class="va">mu0</span><span class="op">)</span> <span class="op">/</span> <span class="va">se</span> <span class="co"># calculate t</span></span>
 <span><span class="op">}</span></span></code></pre>
 </div>
-<div id="challenge1" class="callout challenge">
+<div id="plot-the-distribution-of-t" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="plot-the-distribution-of-t" class="callout-inner">
-<h3 class="callout-title">Plot the distribution of t<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Plot the distribution of t<a class="anchor" aria-label="anchor" href="#plot-the-distribution-of-t"></a>
 </h3>
 <div class="callout-content">
 <p>Now it’s your turn to plot the distribution: Run the above code to
@@ -1523,7 +1524,7 @@ frame:</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>The histogram is not very suspicious.</li>
@@ -1611,12 +1612,12 @@ which is exactly what the central limit theorem tells us.</p>
 <p><strong>Summary:</strong> We can use the t-distribution as a null
 distribution for <span class="math inline">\(t\)</span>, without
 worrying about the sample size.</p>
-<div id="challenge2" class="callout challenge">
+<div id="t-test-in-r" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="t-test-in-r" class="callout-inner">
-<h3 class="callout-title">T-test in R<a class="anchor" aria-label="anchor" href="#challenge2"></a>
+<h3 class="callout-title">T-test in R<a class="anchor" aria-label="anchor" href="#t-test-in-r"></a>
 </h3>
 <div class="callout-content">
 <p>For our example, you already calculated <span class="math inline">\(t=2.57\)</span> from the data for the mice on
@@ -1665,7 +1666,7 @@ to specify the degrees of freedom, which is <span class="math inline">\(N-1\)</s
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Calculating the p-value using the t-distribution:</li>
@@ -1863,12 +1864,12 @@ reason is simple: There are two sources of randomness in the data:</p>
 </ul>
 <p>In the paired design, we can control for the latter of these sources
 of noise.</p>
-<div id="challenge1" class="callout challenge">
+<div id="diving-seals" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="diving-seals" class="callout-inner">
-<h3 class="callout-title">Diving seals<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Diving seals<a class="anchor" aria-label="anchor" href="#diving-seals"></a>
 </h3>
 <div class="callout-content">
 <p>(This exercise is from Whitlock and Schluter (2015).)</p>
@@ -2173,9 +2174,9 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.11.16" class="external-link">sandpaper (0.11.16)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.2" class="external-link">sandpaper (0.12.2)</a>,
         <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.5.3)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.2.16" class="external-link">varnish (0.2.16)</a>.</p>
+      and <a href="https://github.com/carpentries/varnish/tree/0.2.17" class="external-link">varnish (0.2.17)</a>.</p>
 			</div>
 		</footer>
 </div> <!-- / div.container -->
@@ -2197,8 +2198,8 @@ any links that you are not going to use.
   "url": "https://carpentries.github.io/workbench-template-rmd/aio.html",
   "identifier": "https://carpentries.github.io/workbench-template-rmd/aio.html",
   "dateCreated": "2023-05-11",
-  "dateModified": "2023-05-16",
-  "datePublished": "2023-05-16"
+  "dateModified": "2023-05-30",
+  "datePublished": "2023-05-30"
 }
 
   </script><script>
