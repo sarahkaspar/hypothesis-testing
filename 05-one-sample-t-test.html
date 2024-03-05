@@ -348,8 +348,9 @@ first simplify the example a bit: Let’s suppose you measure the weight
 of a couple of mice that have been fed with high-fat diet (black dots).
 We now want to know whether the mice weights in the test group differ
 significantly from a known average mouse weight (blue line).</p>
-<figure><img src="fig/05-mouse-weights.png" alt="graph showing mouse weights of one sample, and a mean to compare them to." width="500" class="figure mx-auto d-block"><figcaption>Scenario for one-sided t-test: Comparing mouse
-weights to a single value.</figcaption></figure><p>In the graph above you see one sample of 20 mice weights, from mice
+<figure><img src="fig/05-mouse-weights.png" width="500" alt="graph showing mouse weights of one sample, and a mean to compare them to." class="figure mx-auto d-block"><div class="figcaption">Scenario for one-sided t-test: Comparing mouse
+weights to a single value.</div>
+</figure><p>In the graph above you see one sample of 20 mice weights, from mice
 that had special diet, which average to <span class="math inline">\(\bar{x}=26.6\,g\)</span>. We will compare their
 weights to a known average mouse weight <span class="math inline">\(mu_0=23.9\,g\)</span>. That means, we
 <strong>compare a sample mean to <span class="math inline">\(mu_0\)</span></strong>.</p>
@@ -390,8 +391,10 @@ null. This is not the case here: Here we have 20 numbers. Therefore, we
 have to help ourselves by summarizing these 20 numbers into something
 meaningful.</p>
 <p>Here’s what we calculate:</p>
-<figure><img src="fig/05-t-statistic.png" alt="Formula for t-statistic, and graph with moise weights indicating sample mean and mu0" width="600" class="figure mx-auto d-block"><figcaption>The t-statistic is a scaled difference between sample
-mean and <span class="math inline">\(\mu_0\)</span></figcaption></figure><p>The t- statistic is one value made out of the 20 values in the sample
+<figure><img src="fig/05-t-statistic.png" width="600" alt="Formula for t-statistic, and graph with moise weights indicating sample mean and mu0" class="figure mx-auto d-block"><div class="figcaption">The t-statistic is a scaled difference between
+sample mean and <span class="math inline">\(\mu_0\)</span>
+</div>
+</figure><p>The t- statistic is one value made out of the 20 values in the sample
 – a scaled sample mean. In the numerator, we have the difference between
 <span class="math inline">\(\bar{x}\)</span>, the sample mean, and <span class="math inline">\(\mu_0\)</span>. The denominator is the standard
 error of the mean (SEM), which is the sample standard deviation over the
@@ -399,8 +402,9 @@ square root of the sample size.</p>
 <p>Why is this a useful summary of the data? Because <span class="math inline">\(t\)</span> <strong>summarizes how much evidence we
 have against the null hypothesis</strong>. This means, <span class="math inline">\(t\)</span> is close to 0 if there is little
 evidence, and it becomes large when we have a lot of evidence.</p>
-<figure><img src="fig/05-scale.png" alt="Formula for t-statistic, and image of scale" width="600" class="figure mx-auto d-block"><figcaption>The t-statistic weighs effect size and sample size
-against variance.</figcaption></figure><p>In other words, we can say that <strong><span class="math inline">\(t\)</span> weighs effect size and sample size
+<figure><img src="fig/05-scale.png" width="600" alt="Formula for t-statistic, and image of scale" class="figure mx-auto d-block"><div class="figcaption">The t-statistic weighs effect size and sample
+size against variance.</div>
+</figure><p>In other words, we can say that <strong><span class="math inline">\(t\)</span> weighs effect size and sample size
 against the variance.</strong></p>
 <p>Evidence for a true difference between the weight of high-fat diet
 mice and <span class="math inline">\(\mu_0\)</span> increases (the
@@ -424,7 +428,8 @@ depends on the type of data.</p>
 </div>
 <div class="section level3">
 <h3 id="performing-the-t-test">Performing the t-test<a class="anchor" aria-label="anchor" href="#performing-the-t-test"></a></h3>
-<figure><img src="fig/05-performing-t-test.png" alt="Schema for performing a one-sample t-test" width="800" class="figure mx-auto d-block"><figcaption>One-sample t-test</figcaption></figure><p>Back to our example: From the data, we can calculate the test
+<figure><img src="fig/05-performing-t-test.png" width="800" alt="Schema for performing a one-sample t-test" class="figure mx-auto d-block"><div class="figcaption">One-sample t-test</div>
+</figure><p>Back to our example: From the data, we can calculate the test
 statistic <span class="math inline">\(t\)</span>, which in this case is
 <span class="math inline">\(t=2.57\)</span>. All that’s left to do is to
 look up whether a value as large as <span class="math inline">\(2.57\)</span> is surprising or not under the null
@@ -567,7 +572,7 @@ any links that you are not going to use.
   "identifier": "https://carpentries.github.io/workbench-template-rmd/05-one-sample-t-test.html",
   "dateCreated": "2023-05-11",
   "dateModified": "2023-11-21",
-  "datePublished": "2024-02-27"
+  "datePublished": "2024-03-05"
 }
 
   </script><script>

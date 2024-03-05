@@ -402,12 +402,14 @@
 </h3>
 <p>What is a hypothesis test, and why do we need it? Consider the
 following example:</p>
-<figure><img src="fig/01-example.png" alt="mice with different diets" width="500" class="figure mx-auto d-block"><figcaption>Mice with different diets</figcaption></figure><p>Researchers want to show that mice that are fed with a special “high
+<figure><img src="fig/01-example.png" width="500" alt="mice with different diets" class="figure mx-auto d-block"><div class="figcaption">Mice with different diets</div>
+</figure><p>Researchers want to show that mice that are fed with a special “high
 fat” diet, grow to a different weight than mice that live on a normal,
 control diet. They feed a group of mice with the control diet, and
 another group of mice with the high fat diet. After a couple of weeks,
 they measure the weight.</p>
-<figure><img src="fig/01-mice-plot.png" alt="Graph with mice weight measurements" width="600" class="figure mx-auto d-block"><figcaption>Does the diet affect the mice’s weight?</figcaption></figure><p>The above graph shows you a subset of a real data set from <a href="https://pubmed.ncbi.nlm.nih.gov/15561913/" class="external-link">this paper</a>. You see
+<figure><img src="fig/01-mice-plot.png" width="600" alt="Graph with mice weight measurements" class="figure mx-auto d-block"><div class="figcaption">Does the diet affect the mice’s weight?</div>
+</figure><p>The above graph shows you a subset of a real data set from <a href="https://pubmed.ncbi.nlm.nih.gov/15561913/" class="external-link">this paper</a>. You see
 the individual control mice on the left, and the high fat mice on the
 right. The boxes that are overlaid indicate the median weights of both
 groups. The <strong>scientific question</strong> is whether the high fat
@@ -545,7 +547,8 @@ probabilities or the <code>.test</code> functions in R.</li>
 want to find out whether the prevalence of a disease in a test group is
 different from the population average. We’ll conduct a very simple test
 to answer that question.</p>
-<figure><img src="fig/02-disease-prevalence.png" alt="" width="500" class="figure mx-auto d-block"><figcaption>Example: Disease prevalence</figcaption></figure><p>Suppose There is a disease with a known prevalence of 4%. This means,
+<figure><img src="fig/02-disease-prevalence.png" width="500" class="figure mx-auto d-block"><div class="figcaption">Example: Disease prevalence</div>
+</figure><p>Suppose There is a disease with a known prevalence of 4%. This means,
 4% of the whole population have this disease. Now you are interested in
 whether a certain pre-condition, let’s say overweight, or living in a
 certain area, changes the risk of getting the disease. You take 100
@@ -571,7 +574,8 @@ p=0.04)\]</span></p>
 <h3 id="the-null-distribution">The null distribution<a class="anchor" aria-label="anchor" href="#the-null-distribution"></a>
 </h3>
 <p>We can look at this distribution:</p>
-<figure><img src="fig/02-null-distribution.png" alt="binomial probability distribution of number of patients with disease" width="500" class="figure mx-auto d-block"><figcaption>The null distribution</figcaption></figure><p>It gives us the probabilities of seeing <span class="math inline">\(X\)</span> cases out of 100 with the disease,
+<figure><img src="fig/02-null-distribution.png" width="500" alt="binomial probability distribution of number of patients with disease" class="figure mx-auto d-block"><div class="figcaption">The null distribution</div>
+</figure><p>It gives us the probabilities of seeing <span class="math inline">\(X\)</span> cases out of 100 with the disease,
 given that each individual has a probability of 4% of having this
 disease. This distribution peaks at 4 out of a 100, which makes sense:
 You expect to see around 4 out of a 100 when the probability is 4%. We,
@@ -593,7 +597,8 @@ probability under the null hypothesis is smaller than 5%.</strong> We
 say that you choose a significance level alpha of <span class="math inline">\(\alpha=5 \%\)</span>. In our example, with a
 significance level of 5%, all observations above 8 out of 100, shown in
 red, would be called significant.</p>
-<figure><img src="fig/02-significance.png" alt="The null distribution of the number of patients with disease, with significant outcomes indicated by colour." width="500" class="figure mx-auto d-block"><figcaption>The null distribution</figcaption></figure>
+<figure><img src="fig/02-significance.png" width="500" alt="The null distribution of the number of patients with disease, with significant outcomes indicated by colour." class="figure mx-auto d-block"><div class="figcaption">The null distribution</div>
+</figure>
 </div>
 <div class="section level3">
 <h3 id="recap">Recap<a class="anchor" aria-label="anchor" href="#recap"></a>
@@ -737,7 +742,8 @@ probability of success
 <p>Before we continue to the next episode, I have to tell you that
 something is very wrong (conceptionally) with the test we just
 performed.</p>
-<figure><img src="fig/A_small_cup_of_coffee.JPG" alt="A cup of coffee" width="300" class="figure mx-auto d-block"><figcaption>Please take a minute…</figcaption></figure><p>… and think about what the <em>initial alternative hypothesis</em>
+<figure><img src="fig/A_small_cup_of_coffee.JPG" width="300" alt="A cup of coffee" class="figure mx-auto d-block"><div class="figcaption">Please take a minute…</div>
+</figure><p>… and think about what the <em>initial alternative hypothesis</em>
 was, and whether this is in line with what we calculated.</p>
 <p>(Image: Wikimedia)</p>
 </div>
@@ -788,7 +794,8 @@ function</li>
 <section id="a-one-sided-test"><h2 class="section-heading">A one-sided test<a class="anchor" aria-label="anchor" href="#a-one-sided-test"></a>
 </h2>
 <hr class="half-width">
-<figure><img src="fig/02-significance.png" alt="Binomial null distribution with one-sided significance indicated." width="500" class="figure mx-auto d-block"><figcaption>One-sided test</figcaption></figure><p>What you’ve seen in the last episode was a <strong>one-sided
+<figure><img src="fig/02-significance.png" width="500" alt="Binomial null distribution with one-sided significance indicated." class="figure mx-auto d-block"><div class="figcaption">One-sided test</div>
+</figure><p>What you’ve seen in the last episode was a <strong>one-sided
 test</strong>, which means we looked at only at one side of the
 distribution. In this example, we observed 9 out of 100 persons with
 disease, then we asked: What is the probability under the null, to
@@ -826,12 +833,12 @@ the test group gives you an outcome that is higher or lower than the
 expected value. So we’d have to double the alpha, and in reality it
 would be around 10%. This means, assuming the null was true, we actually
 had an about 10% chance of falsely rejecting it.</p>
-<div id="side-note" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="side-note" class="callout-inner">
-<h3 class="callout-title">Side note<a class="anchor" aria-label="anchor" href="#side-note"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="side-note">Side note<a class="anchor" aria-label="anchor" href="#side-note"></a>
 </h3>
 <div class="callout-content">
 <p>Above it says that there is a ~50% chance of the observation being
@@ -962,7 +969,7 @@ even <em>decrease</em> the risk. We thus test for that.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>In the first and second scenario, one-sided tests could be used.
 There are different opinions to how sparsely they should be used. For
@@ -1024,7 +1031,8 @@ them gives a significant result.</p>
 <em>increase type I error</em>. Here’s what this means:</p>
 <p>If you perform a test and either reject the null hypothesis or not,
 there are four possible outcomes:</p>
-<figure><img src="fig/04-errors_hypothesis_testing.png" alt="image of confusion matrix" width="600" class="figure mx-auto d-block"><figcaption>Errors in hypothesis testing</figcaption></figure><ul>
+<figure><img src="fig/04-errors_hypothesis_testing.png" width="600" alt="image of confusion matrix" class="figure mx-auto d-block"><div class="figcaption">Errors in hypothesis testing</div>
+</figure><ul>
 <li>The favorable classifications are <strong>true negative</strong>,
 where you correctly don’t reject the null, and <strong>true
 positive</strong>, where you correctly reject it and decide that there
@@ -1092,8 +1100,9 @@ first simplify the example a bit: Let’s suppose you measure the weight
 of a couple of mice that have been fed with high-fat diet (black dots).
 We now want to know whether the mice weights in the test group differ
 significantly from a known average mouse weight (blue line).</p>
-<figure><img src="fig/05-mouse-weights.png" alt="graph showing mouse weights of one sample, and a mean to compare them to." width="500" class="figure mx-auto d-block"><figcaption>Scenario for one-sided t-test: Comparing mouse
-weights to a single value.</figcaption></figure><p>In the graph above you see one sample of 20 mice weights, from mice
+<figure><img src="fig/05-mouse-weights.png" width="500" alt="graph showing mouse weights of one sample, and a mean to compare them to." class="figure mx-auto d-block"><div class="figcaption">Scenario for one-sided t-test: Comparing mouse
+weights to a single value.</div>
+</figure><p>In the graph above you see one sample of 20 mice weights, from mice
 that had special diet, which average to <span class="math inline">\(\bar{x}=26.6\,g\)</span>. We will compare their
 weights to a known average mouse weight <span class="math inline">\(mu_0=23.9\,g\)</span>. That means, we
 <strong>compare a sample mean to <span class="math inline">\(mu_0\)</span></strong>.</p>
@@ -1143,8 +1152,10 @@ null. This is not the case here: Here we have 20 numbers. Therefore, we
 have to help ourselves by summarizing these 20 numbers into something
 meaningful.</p>
 <p>Here’s what we calculate:</p>
-<figure><img src="fig/05-t-statistic.png" alt="Formula for t-statistic, and graph with moise weights indicating sample mean and mu0" width="600" class="figure mx-auto d-block"><figcaption>The t-statistic is a scaled difference between sample
-mean and <span class="math inline">\(\mu_0\)</span></figcaption></figure><p>The t- statistic is one value made out of the 20 values in the sample
+<figure><img src="fig/05-t-statistic.png" width="600" alt="Formula for t-statistic, and graph with moise weights indicating sample mean and mu0" class="figure mx-auto d-block"><div class="figcaption">The t-statistic is a scaled difference between
+sample mean and <span class="math inline">\(\mu_0\)</span>
+</div>
+</figure><p>The t- statistic is one value made out of the 20 values in the sample
 – a scaled sample mean. In the numerator, we have the difference between
 <span class="math inline">\(\bar{x}\)</span>, the sample mean, and <span class="math inline">\(\mu_0\)</span>. The denominator is the standard
 error of the mean (SEM), which is the sample standard deviation over the
@@ -1152,8 +1163,9 @@ square root of the sample size.</p>
 <p>Why is this a useful summary of the data? Because <span class="math inline">\(t\)</span> <strong>summarizes how much evidence we
 have against the null hypothesis</strong>. This means, <span class="math inline">\(t\)</span> is close to 0 if there is little
 evidence, and it becomes large when we have a lot of evidence.</p>
-<figure><img src="fig/05-scale.png" alt="Formula for t-statistic, and image of scale" width="600" class="figure mx-auto d-block"><figcaption>The t-statistic weighs effect size and sample size
-against variance.</figcaption></figure><p>In other words, we can say that <strong><span class="math inline">\(t\)</span> weighs effect size and sample size
+<figure><img src="fig/05-scale.png" width="600" alt="Formula for t-statistic, and image of scale" class="figure mx-auto d-block"><div class="figcaption">The t-statistic weighs effect size and sample
+size against variance.</div>
+</figure><p>In other words, we can say that <strong><span class="math inline">\(t\)</span> weighs effect size and sample size
 against the variance.</strong></p>
 <p>Evidence for a true difference between the weight of high-fat diet
 mice and <span class="math inline">\(\mu_0\)</span> increases (the
@@ -1182,7 +1194,8 @@ depends on the type of data.</p>
 <div class="section level3">
 <h3 id="performing-the-t-test">Performing the t-test<a class="anchor" aria-label="anchor" href="#performing-the-t-test"></a>
 </h3>
-<figure><img src="fig/05-performing-t-test.png" alt="Schema for performing a one-sample t-test" width="800" class="figure mx-auto d-block"><figcaption>One-sample t-test</figcaption></figure><p>Back to our example: From the data, we can calculate the test
+<figure><img src="fig/05-performing-t-test.png" width="800" alt="Schema for performing a one-sample t-test" class="figure mx-auto d-block"><div class="figcaption">One-sample t-test</div>
+</figure><p>Back to our example: From the data, we can calculate the test
 statistic <span class="math inline">\(t\)</span>, which in this case is
 <span class="math inline">\(t=2.57\)</span>. All that’s left to do is to
 look up whether a value as large as <span class="math inline">\(2.57\)</span> is surprising or not under the null
@@ -1352,7 +1365,7 @@ calculation to make this a two-sided test?</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>
 </li></ol>
@@ -1504,7 +1517,7 @@ frame:</p>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data.frame</span>(<span class="at">t =</span> null_t) <span class="sc">%&gt;%</span> </span></code></pre>
+<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">data.frame</span>(<span class="at">t =</span> null_t) <span class="sc">%&gt;%</span> </span></code></pre>
 </div>
 <ol start="2" style="list-style-type: decimal">
 <li>Try a QQ-plot instead.</li>
@@ -1517,7 +1530,7 @@ frame:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>The histogram is not very suspicious.</li>
@@ -1598,8 +1611,9 @@ It has one parameter, <span class="math inline">\(\nu\)</span>, which
 specifies the degrees of freedom. Without going into detail, <span class="math inline">\(\nu\)</span> is closely connected to the number of
 data points (for a one-sample t-test, <span class="math inline">\(\nu=N-1\)</span>). In the figure below, you see
 how the t-distribution changes with the sample size:</p>
-<figure><img src="fig/Student_t_pdf.svg" alt="Graph showing t-distribution" width="500" class="figure mx-auto d-block"><figcaption>The t distribution for different degrees of freedom
-(wikipedia)</figcaption></figure><p>For large samples, i.e. high values of <span class="math inline">\(\nu\)</span>, the heavy tails vanish and the
+<figure><img src="fig/Student_t_pdf.svg" width="500" alt="Graph showing t-distribution" class="figure mx-auto d-block"><div class="figcaption">The t distribution for different degrees of
+freedom (wikipedia)</div>
+</figure><p>For large samples, i.e. high values of <span class="math inline">\(\nu\)</span>, the heavy tails vanish and the
 t-distribution becomes more and more similar to a normal distribution,
 which is exactly what the central limit theorem tells us.</p>
 <p><strong>Summary:</strong> We can use the t-distribution as a null
@@ -1657,7 +1671,7 @@ to specify the degrees of freedom, which is <span class="math inline">\(N-1\)</s
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Calculating the p-value using the t-distribution:</li>
@@ -1899,7 +1913,7 @@ to extract two vectors from the data frame, or use the
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>plotting the data</li>
@@ -1984,7 +1998,8 @@ treatment A. All measurements are shown, and a p-value of an unpaired
 two-sample t-test was reported.</p>
 <p>Have a coffee and think about what you conclude about the new
 treatment…</p>
-<figure><img src="fig/A_small_cup_of_coffee.JPG" alt="image showing a cup of coffee" width="500" class="figure mx-auto d-block"><figcaption>Have a coffee! (Image: Wikimedia)</figcaption></figure><p>So, if you were in pharmaceutical business: Would you decide to
+<figure><img src="fig/A_small_cup_of_coffee.JPG" width="500" alt="image showing a cup of coffee" class="figure mx-auto d-block"><div class="figcaption">Have a coffee! (Image: Wikimedia)</div>
+</figure><p>So, if you were in pharmaceutical business: Would you decide to
 continue research on treatment B? It evokes a higher (presume: better)
 response than A, and will therefore sell better. The difference is
 clearly significant. Right…?<br>
@@ -2039,7 +2054,8 @@ any links that you are not going to use.
         </div>
 <p>I hope this tutorial allowed you to notice a pattern in the tests you
 have seen.</p>
-<figure><img src="fig/cookbook.png" alt="Image of a cookbook for statistical tests" width="150" class="figure mx-auto d-block"><figcaption>Cookbook (image adapted from kindpng.com)</figcaption></figure><p>The “cook book” for a test goes as follows:</p>
+<figure><img src="fig/cookbook.png" width="150" alt="Image of a cookbook for statistical tests" class="figure mx-auto d-block"><div class="figcaption">Cookbook (image adapted from kindpng.com)</div>
+</figure><p>The “cook book” for a test goes as follows:</p>
 <ol style="list-style-type: decimal">
 <li><p>Set up a <strong>hypothesis <span class="math inline">\(H_0\)</span></strong> that you want to
 reject.</p></li>
@@ -2061,7 +2077,9 @@ hypothesis.</p></li>
 – standard procedures, i.e. statistical tests, exist for most kind of
 data, and the computer does the calculation for you. So… what is left
 for you to do?</p>
-<figure><img src="fig/in_practice.png" alt="Computer screen executing wilcoxon test" width="150" class="figure mx-auto d-block"><figcaption>In practice (image adapted from kindpng.com)</figcaption></figure><ol style="list-style-type: decimal">
+<figure><img src="fig/in_practice.png" width="150" alt="Computer screen executing wilcoxon test" class="figure mx-auto d-block"><div class="figcaption">In practice (image adapted from
+kindpng.com)</div>
+</figure><ol style="list-style-type: decimal">
 <li><p>Look at your data!</p></li>
 <li><p>Decide on a distribution that your data follow.</p></li>
 <li><p>Possibly transform your data to match a suitable distribution
@@ -2186,8 +2204,8 @@ any links that you are not going to use.
   "url": "https://carpentries.github.io/workbench-template-rmd/aio.html",
   "identifier": "https://carpentries.github.io/workbench-template-rmd/aio.html",
   "dateCreated": "2023-05-11",
-  "dateModified": "2024-02-27",
-  "datePublished": "2024-02-27"
+  "dateModified": "2024-03-05",
+  "datePublished": "2024-03-05"
 }
 
   </script><script>

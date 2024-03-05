@@ -405,7 +405,7 @@ frame:</p>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data.frame</span>(<span class="at">t =</span> null_t) <span class="sc">%&gt;%</span> </span></code></pre>
+<pre class="sourceCode r" tabindex="0"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">data.frame</span>(<span class="at">t =</span> null_t) <span class="sc">%&gt;%</span> </span></code></pre>
 </div>
 <ol start="2" style="list-style-type: decimal"><li>Try a QQ-plot instead.</li>
 </ol></div>
@@ -416,7 +416,7 @@ frame:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>The histogram is not very suspicious.</li>
 </ol><div class="codewrapper sourceCode" id="cb5">
@@ -491,8 +491,9 @@ It has one parameter, <span class="math inline">\(\nu\)</span>, which
 specifies the degrees of freedom. Without going into detail, <span class="math inline">\(\nu\)</span> is closely connected to the number of
 data points (for a one-sample t-test, <span class="math inline">\(\nu=N-1\)</span>). In the figure below, you see
 how the t-distribution changes with the sample size:</p>
-<figure><img src="fig/Student_t_pdf.svg" alt="Graph showing t-distribution" width="500" class="figure mx-auto d-block"><figcaption>The t distribution for different degrees of freedom
-(wikipedia)</figcaption></figure><p>For large samples, i.e. high values of <span class="math inline">\(\nu\)</span>, the heavy tails vanish and the
+<figure><img src="fig/Student_t_pdf.svg" width="500" alt="Graph showing t-distribution" class="figure mx-auto d-block"><div class="figcaption">The t distribution for different degrees of
+freedom (wikipedia)</div>
+</figure><p>For large samples, i.e. high values of <span class="math inline">\(\nu\)</span>, the heavy tails vanish and the
 t-distribution becomes more and more similar to a normal distribution,
 which is exactly what the central limit theorem tells us.</p>
 <p><strong>Summary:</strong> We can use the t-distribution as a null
@@ -546,7 +547,7 @@ to specify the degrees of freedom, which is <span class="math inline">\(N-1\)</s
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Calculating the p-value using the t-distribution:</li>
 </ol><div class="codewrapper sourceCode" id="cb13">
@@ -649,7 +650,7 @@ any links that you are not going to use.
   "identifier": "https://carpentries.github.io/workbench-template-rmd/07-t-practice.html",
   "dateCreated": "2023-05-11",
   "dateModified": "2023-11-21",
-  "datePublished": "2024-02-27"
+  "datePublished": "2024-03-05"
 }
 
   </script><script>
